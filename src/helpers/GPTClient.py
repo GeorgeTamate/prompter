@@ -1,13 +1,6 @@
 from openai import OpenAI
 import json
 import utils.gpt.message_utils as message_utils
-from config.gpt_config import GPTMessageField, GPTMessageRole
-
-ROLE = GPTMessageField.ROLE.value
-CONTENT = GPTMessageField.CONTENT.value
-SYSTEM = GPTMessageRole.SYSTEM.value
-USER = GPTMessageRole.USER.value
-ASSISTANT = GPTMessageRole.ASSISTANT.value
 
 class GPTClient:
     def __init__(self, config):
